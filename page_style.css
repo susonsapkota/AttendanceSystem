@@ -1,0 +1,111 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #343A40;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+}
+.box {
+  width: 500px;
+  margin: 200px 0;
+}
+
+.shape1{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: #34A853;
+  border-radius: 50%;
+  float: left;
+  margin-right: -50px;
+}
+.shape2 {
+  position: relative;
+  height: 120px;
+  width: 120px;
+  background-color: #4285F4;
+  z-index: 1;
+  border-radius: 50%;
+  margin-top: -15px;
+  float: left;
+}
+.shape3 {
+  position: relative;
+  height: 170px;
+  width: 170px;
+  background-color: #EA4335;
+  border-radius: 50%;
+  z-index: 1;
+  margin-top: -15px;
+  float: left;
+  margin-left: -31px;
+}
+.shape4 {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: #4285F4;
+  border-radius: 50%;
+  margin-top: -13px;
+  float: left;
+  margin-left: -75px;
+}
+.shape5 {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-color: #FBBC05;
+  border-radius: 50%;
+  float: left;
+  z-index: 0;
+  margin-right: -48px;
+  margin-left: -32px;
+  margin-top: -155px;
+}
+.shape6 {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: #FBBC05;
+  border-radius: 50%;
+  float: left;
+  margin-right: -20px;
+  margin-top: -155px;
+}
+.shape7 {
+  position: relative;
+  height: 180px;
+  width: 180px;
+  background-color: #4285F4;
+  border-radius: 50%;
+  float: left;
+  margin-right: -20px;
+  margin-top: -170px;
+}
+.float {
+  position: absolute;
+  z-index: 2;
+}
+
+.form {
+  margin-left: 145px;
+}
+.cards {
+  flex: 75%;
+  background-color: #F1F1F1;
+  padding: 25px;
+  margin: 75px 25px 25px 25px;
+  border-radius: 6px;
+  box-shadow: 4px 5px 15px -7px rgba(46, 74, 117, 1);
+
+
+}
+.headings{
+  font-family: "Bebas Neue", Arial;
+  font-size: 40px;
+  color: red;
+}
