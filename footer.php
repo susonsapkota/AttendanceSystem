@@ -1,12 +1,10 @@
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script><!-- Footer -->
-
-<div class="footer">
-  <p class="bg-black text-white">&copy; 2018 <a href="http://susonsapkota.com.np/">Suson Sapkota
-  </p>
 </div>
-</body>
+</div>
+<footer id="footer" style="margin-top:50px; padding-top:auto;">
+  <div class="jumbotron" style="background-color:black; border-radius:0; margin-bottom:-20px">
+    <p class="text-white text-center">&copy; 2018 <a href="http://susonsapkota.com.np/">Suson Sapkota</a></p>
+      <p class="text-center text-white ">susonsapkota@gmail.com</p>
+    </div>
+  </footer>
 </html>

@@ -1,14 +1,29 @@
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #343A40;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  overflow: hidden;
+*{
+  margin: 0;
+  padding: 0;
+
 }
+html,body{
+  height: 100%;
+
+}
+#contain{
+  min-height:100%;
+}
+#main{
+  overflow: auto;
+  padding-bottom: 100px;
+
+}
+#footer{
+color: black;
+position: relative;
+height: 100px;
+margin-top: -150px;
+clear: both;
+background-color: black;
+}
+
 .box {
   width: 500px;
   margin: 200px 0;
@@ -101,8 +116,6 @@
   margin: 75px 25px 25px 25px;
   border-radius: 6px;
   box-shadow: 4px 5px 15px -7px rgba(46, 74, 117, 1);
-
-
 }
 .headings{
   font-family: "Bebas Neue", Arial;

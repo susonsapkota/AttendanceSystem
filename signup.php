@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title> Log-In </title>
+  <title> Signup | mgmt </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -15,22 +15,27 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">Student Mgmt.</a>
+    <a class="navbar-brand" href="#">Student Mgmt.</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-  <div class="collapse navbar-collapse ">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-         <a href="signup.html" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-floppy-open"></span> Sign Up</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <div class="collapse navbar-collapse ">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="login.php" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-floppy-open"></span> Log In</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <?php if(isset($_GET['id'])){
+    if ($_GET['id']) {
+      echo "<p class='jumbotron text-center' style='height:5px;'><kbd>The username is already taken on that account.</kbd></p>";
+    }
+  }
+  ?>
   <div class="container">
     <div class="cards">
-      <h1 class="headings text-center"><kbd>Sign In</kbd></h1>
+      <h1 class="headings text-center"><kbd>Sign Up</kbd></h1>
       <div id="login-row" class="row justify-content-center align-items-center">
         <div id="login-column" class="col-md-6">
           <div class="box">
@@ -42,14 +47,20 @@
             <div class="shape6"></div>
             <div class="shape7"></div>
             <div class="float">
-              <form class="form" action="">
+              <form class="form" action="redirect.php" method="post">
                 <div class="form-group">
                   <label for="username" class="text-black"><kbd>Username:</kbd></label><br>
-                  <input type="text" name="username" id="username" class="form-control">
+                  <input type="text" required name="username" id="username" class="form-control">
                 </div>
                 <div class="form-group">
                   <label for="password" class="text-black"><kbd>Password:</kbd></label><br>
-                  <input type="password" name="password" id="password" class="form-control">
+                  <input type="password" required name="password" id="password" class="form-control">
+                  <input type="hidden" name="actionToDo" value="signup">
+                </div>
+                <div class="form-group">
+                  <label class="radio-inline"><input type="radio" name="type" checked value="student"><kbd>Student</kbd></label>
+                  <label class="radio-inline"><input type="radio" name="type" value="teacher"><kbd>Teacher</kbd></label>
+                  <label class="radio-inline"><input type="radio" name="type" value="admin"><kbd>*Admin*</kbd></label>
                 </div>
                 <div class="form-group">
                   <input type="submit" name="submit" class="btn btn-dark btn-md" value="Submit:">
@@ -61,11 +72,6 @@
       </div>
     </div>
   </div>
-
-
-  <div class="footer ">
-    <p class="bg-black text-white">&copy; 2018 <a href="http://susonsapkota.com.np/">Suson Sapkota
-    </p>
-  </div>
-</body>
-</html>
+  <?php
+  require_once('footer.php');
+  ?>
